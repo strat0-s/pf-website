@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Oswald:wght@500&family=Press+Start+2P&family=Roboto+Mono:wght@300&family=Russo+One&display=swap');
+
+body{
+    background-color: #ffc1cb;
+    background-image: url('../images/wall_bg.jpg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Press Start 2P', cursive;
+    color: aliceblue;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 100px;
+    background-color: black;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.brand img{
+    width: 90px;
+    padding: 0 0 4px 0;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(../images/gilmour.png);
+    background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.icons{
+    margin-bottom: 15px;
+}
+
+.icons i{
+    cursor: pointer;
+    padding: 4px;
+}
+
+.icons i:hover{
+    color: #ff247b;
+} 
+
+#myProgressBar{
+    width: 80vw;
+    cursor:pointer;
+}
+
+.songItem i{
+    padding-left: 5px ;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.songItem img{
+    width: 44px;
+    margin: 0 4px;
+    border-radius: 14px;
+}
+
+.timestamp{
+    margin: 0 20px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.timestamp i:hover{
+    color: #ff247b;
+    animation: ease-in-out 0.8s;
+}
+
+.songItemContainer {
+    margin-top: 44px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 9.8vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Home{
+    color:white;
+    text-decoration: none;
+}
+
+.About{
+    color:white;
+    text-decoration: none;
+}
+
+.Home:hover{
+    background: linear-gradient(to left,#9900F0 20%,#e600ff 30%,#F900BF 70%,#FF85B3 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 1s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+.About:hover{
+    background: linear-gradient(to left,#9900F0 20%,#e600ff 30%,#F900BF 70%,#FF85B3 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 1s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+.gradientText{
+    background: linear-gradient(to right,#4700D8 20%,#9900F0 30%,#F900BF 70%,#FF85B3 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
